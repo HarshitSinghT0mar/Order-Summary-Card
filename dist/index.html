@@ -20,11 +20,16 @@
   </head>
   <body style="font-family: 'Red Hat Display', sans-serif">
     <div
-      class="grid place-content-center h-screen bg-[url('../images/pattern-background-desktop.svg')]"
+      class="grid place-content-center h-screen w-full"
+      style="
+        background-image: url('./images/pattern-background-desktop.svg'),url('./images/pattern-background-desktop.svg');
+      "
     >
-      <div class="w-[17rem] h-fit rounded-2xl bg-white text-center md:w-[20rem] ">
-        <div >
-          <img src="../images/illustration-hero.svg" class="rounded-t-xl" />
+      <div
+        class="w-[17rem] h-fit rounded-2xl bg-white text-center md:w-[20rem]"
+      >
+        <div>
+          <img src="./images/illustration-hero.svg" class="rounded-t-xl" />
         </div>
         <div class="p-6 flex flex-col gap-6">
           <div>
@@ -34,13 +39,17 @@
               on any device anywhere you like!
             </p>
           </div>
-          <div class="flex place-content-between items-center bg-slate-100 py-2 px-3 rounded-xl w-full ">
-            <div><img src="../images/icon-music.svg" /></div>
+          <div
+            class="flex place-content-between items-center bg-slate-100 py-2 px-3 rounded-xl w-full"
+          >
+            <div><img src="./images/icon-music.svg" /></div>
             <div>
               <p class="font-bold text-sm">Annual Plan</p>
               <span class="text-sm text-slate-500">$59.99/year</span>
             </div>
-            <a href="#" class="text-[12px] underline text-blue-700 font-bold hover:text-violet-500 hover:no-underline"
+            <a
+              href="#"
+              class="text-[12px] underline text-blue-700 font-bold hover:text-violet-500 hover:no-underline"
               >Change</a
             >
           </div>
@@ -50,7 +59,11 @@
             >
               Proceed to payment
             </button>
-            <button class="text-slate-500 font-semibold text-[12px] hover:text-black">Cancel Order</button>
+            <button
+              class="text-slate-500 font-semibold text-[12px] hover:text-black"
+            >
+              Cancel Order
+            </button>
           </div>
         </div>
       </div>
