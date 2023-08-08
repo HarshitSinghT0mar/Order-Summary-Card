@@ -19,22 +19,20 @@
     </style>
   </head>
   <body style="font-family: 'Red Hat Display', sans-serif">
-    <div
-      class="grid place-content-center h-screen w-full"
-      style="
-        background-image: url('./images/pattern-background-desktop.svg'),url('./images/pattern-background-desktop.svg');
-      "
-    >
-      <div
-        class="w-[17rem] h-fit rounded-2xl bg-white text-center md:w-[20rem]"
-      >
+    <div class="grid place-content-center h-screen w-full bg-mobile-pattern sm:bg-desktop-pattern bg-no-repeat bg-cover bg-blue-50">
+      <div class="w-[17rem] h-fit rounded-2xl text-center md:w-[20rem] bg-white">
         <div>
-          <img src="./images/illustration-hero.svg" class="rounded-t-xl" />
+          <img
+            src="./images/illustration-hero.svg"
+            class="rounded-t-xl"
+            alt="hero-image"
+          />
         </div>
         <div class="p-6 flex flex-col gap-6">
           <div>
             <h1 class="font-extrabold text-lg mb-4">Order Summary</h1>
-            <p class="text-slate-500 text-sm">
+            <p class="text-slate-500 text-sm
+            ">
               You can listen to millions of of songs, audiobooks, and podcasts
               on any device anywhere you like!
             </p>
@@ -42,9 +40,9 @@
           <div
             class="flex place-content-between items-center bg-slate-100 py-2 px-3 rounded-xl w-full"
           >
-            <div><img src="./images/icon-music.svg" /></div>
+            <div><img src="./images/icon-music.svg" alt="music-icon" /></div>
             <div>
-              <p class="font-bold text-sm">Annual Plan</p>
+              <p class="font-bold text-sm ">Annual Plan</p>
               <span class="text-sm text-slate-500">$59.99/year</span>
             </div>
             <a
